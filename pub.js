@@ -15,14 +15,7 @@ if (!subject) {
     process.exit();
 }
 
-// nats.publish(subject, msg, function() {
-//     console.log('Published [' + subject + '] : "' + msg + '"');
-//     process.exit();
-// });
-
-// Request with Auto-Unsubscribe. Will unsubscribe after
-// the first response is received via {'max':1}
-nats.publish(subject, msg, function (response) {
-    console.log('Got a response for help: ' + response);
+nats.publish(subject, msg, function() {
+    console.log('Published [' + subject + '] : "' + msg + '"');
     process.exit();
 });
