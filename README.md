@@ -1,11 +1,7 @@
-# nats-io-demo
+# Nats.io examples
 
-Starting subcribers
-```
-node sub.js mychannel
-```
-
-Starting publishers
-```
-node pub.js mychannel mymsg
-```
+Demo for some mechanisms of Nats.io:
+- pub/sub
+- request to many / response
+- request to only one / response
+- Queue sharing
