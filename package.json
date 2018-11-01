@@ -2,7 +2,7 @@
   "name": "demo-natsio",
   "version": "1.0.0",
   "description": "",
-  "main": "pub.js",
+  "main": "pub-sub/pub.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
