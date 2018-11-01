@@ -1,4 +1,4 @@
-# request - response (to only one)
+# request to only one - response
 
 In a request-response exchange, publish request operation publishes a message with a reply subject expecting a response on that reply subject. You can request to automatically wait for a response inline.
 
