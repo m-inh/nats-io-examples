@@ -4,4 +4,4 @@ In a request-response exchange, publish request operation publishes a message wi
 
 The request creates an inbox and performs a request call with the inbox reply and returns the first reply received. This is optimized in the case of single request and single response.
 
-[logo]: to-one-reply.png
+[logo]: ./to-one-reply.png
