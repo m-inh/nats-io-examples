@@ -1,4 +1,3 @@
-const NATS = require('nats');
 const nats = require('nats').connect();
 
 nats.on('error', function (e) {
@@ -15,5 +14,5 @@ console.log('Request a message', msg);
 
 nats.request(subject, msg, {'max': 1}, function (response) {
     console.log('Got a response for help: ' + response);
-    process.exit();
+    // process.exit();
 });

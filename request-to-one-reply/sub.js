@@ -16,5 +16,6 @@ console.log('Listening on [' + subject + ']');
 
 nats.subscribe(subject, {'queue': "my_queue"}, function (msg, replyTo) {
     console.log(subject, 'Received "' + msg + '"');
+    console.log('replyTo', replyTo);
     nats.publish(replyTo, 'I can help!');
 });

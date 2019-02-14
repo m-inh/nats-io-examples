@@ -16,5 +16,10 @@ console.log('Listening on [' + subject + ']');
 
 nats.subscribe(subject, function (msg, replyTo) {
     console.log(subject, 'Received "' + msg + '"');
-    nats.publish(replyTo, 'I can help!');
+    const delay = Math.random() * 10 * 1000; // second
+
+    setTimeout(() => {
+        nats.publish(replyTo, `I can help! after ${delay} second`);
+        console.log(`Job done! after ${delay} second`)
+    }, delay);
 });
