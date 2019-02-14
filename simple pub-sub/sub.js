@@ -14,6 +14,6 @@ const subject = 'my_subject';
 
 console.log('Listening on [' + subject + ']');
 
-nats.subscribe(subject, {'queue': 'my_queue'}, function(msg) {
+nats.subscribe(subject, function(msg) {
     console.log('Received "' + msg + '"');
 });

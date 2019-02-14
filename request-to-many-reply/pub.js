@@ -17,13 +17,3 @@ nats.request(subject, msg, {'max': 1}, function (response) {
     console.log('Got a response for help: ' + response);
     process.exit();
 });
-
-// Request for single response with timeout.
-// nats.requestOne(subject, null, {}, 1000, function(response) {
-//     // `NATS` is the library.
-//     if(response instanceof NATS.NatsError && response.code === NATS.REQ_TIMEOUT) {
-//         console.log('Request for help timed out.');
-//         return;
-//     }
-//     console.log('Got a response for help: ' + response);
-// });
